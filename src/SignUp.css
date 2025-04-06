@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .loginPageContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2rem;
+    overflow: hidden;
+  }
+  
+  /* Increased size and adjusted position of the top-right arc */
+  .topRightArc {
+    position: absolute;
+    top: -250px; /* Moved upwards for a larger arc reaching towards the center */
+    right: -250px; /* Moved further right */
+    width: 500px; /* Increased size */
+    height: 500px; /* Increased size */
+    border-radius: 50%;
+    background-color: #F1F4FF;
+    z-index: 0;
+  }
+  
+  .loginContent1 {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1;
+    margin-top: -50px; /* Shift content up */
+  }
+  
+ 
+  .loginHeader1 {
+    font-size: 3.0rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  .welcomeMessage1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .inputGroup label {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  input {
+    width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      border: 2px solid #F1F4FF;
+      border-radius: 8px;
+      background-color: #F1F4FF;
+      transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #6C727A;
+    background-color: #F1F4FF;
+    box-shadow: 0 0 0 3px rgba(108, 114, 122, 0.1);
+  }
+  
+  .forgotPassword {
+    text-align: right;
+  }
+  
+  .forgotPassword a {
+    text-decoration: none;
+    color: #6C727A;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+  }
+  
+  .forgotPassword a:hover {
+    color: #565C64;
+    text-decoration: underline;
+  }
+  
+  .signInButton {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #6C727A;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signInButton:hover {
+    background-color: #565C64;
+  }
+  
+  .createAccount {
+    text-align: center;
+  }
+  
+  .createAccount p {
+    font-size: 1rem;
+    color: #6C727A;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .createAccount p:hover {
+    color: #565C64;
+    text-decoration: underline;
+  }
+  
+  
+  
+  

@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.loginPageContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+/* Increased size and adjusted position of the top-right arc */
+.topRightArc {
+  position: absolute;
+  top: -250px; /* Moved upwards for a larger arc reaching towards the center */
+  right: -250px; /* Moved further right */
+  width: 500px; /* Increased size */
+  height: 500px; /* Increased size */
+  border-radius: 50%;
+  background-color: #F1F4FF;
+  z-index: 0;
+}
+
+.loginContent {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 1;
+  margin-top: -50px; /* Shift content up */
+}
+
+.loginHeader {
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.loginHeader1 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+.welcomeMessage {
+  font-size: 1.4rem;
+
+  color: grey;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid #F1F4FF;
+    border-radius: 8px;
+    background-color: #F1F4FF;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6C727A;
+  background-color: #F1F4FF;
+  box-shadow: 0 0 0 3px rgba(108, 114, 122, 0.1);
+}
+
+.forgotPassword {
+  text-align: right;
+}
+
+.forgotPassword a {
+  text-decoration: none;
+  color: #6C727A;
+  font-size: 1.0rem;
+  transition: color 0.2s ease;
+}
+
+.forgotPassword a:hover {
+  color: #565C64;
+  text-decoration: underline;
+}
+
+.signInButton {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #6C727A;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 8px 16px 0 rgba(94, 101, 238, 0.4); 
+}
+
+.signInButton:hover {
+  background-color: #565C64;
+}
+
+.createAccount {
+  text-align: center;
+}
+
+.createAccount p {
+  font-size: 1.0rem;
+  color: #6C727A;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.createAccount p:hover {
+  color: #565C64;
+  text-decoration: underline;
+}
+
+.linkStyle {
+  text-decoration: none;  /* Ensures no underline */
+  color: inherit;  /* Inherits color from parent */
+  cursor: pointer;  /* Shows a pointer cursor */
+}
+
+p {
+  color: #7f8c8d;
+  font-size: 1.0rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+/* Message styles that don't affect layout */
+.messageContainer {
+  position: relative;
+  height: 1.5rem; /* Fixed height so layout stays consistent */
+  margin: 0.5rem 0;
+}
+
+.simpleMessage {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6C727A;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+.errorMessage {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.5rem 0;
+  
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 100%;
+ 
+  display: inline-block;
+}

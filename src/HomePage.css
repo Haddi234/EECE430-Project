@@ -1,0 +1,167 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Main container styles */
+.healthcare-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  padding: 24px;
+}
+
+/* Header section styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.greeting h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+
+.greeting p {
+  color: #333333;
+  margin-top: 2px;
+  font-size: 20px;
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  background-color: #d1d5db;
+  border-radius: 50%;
+}
+
+/* Search bar styles */
+.search-bar {
+  margin-bottom: 28px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  padding: 8px 12px; /* Consistent padding */
+  border-radius: 12px;
+  transition: none; /* No transition to avoid sudden changes */
+}
+
+.search-icon {
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.search-input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #1f2937;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  box-shadow: none; /* Remove shadow on focus */
+  border-radius: 12px; /* Keep the rounded corners consistent */
+}
+
+.search-input:focus {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: none; /* No shadow on focus */
+}
+
+.search-input::placeholder {
+  color: #6b7280;
+  font-style: italic;
+}
+
+
+/* Category buttons styles */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.category-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #6b7280;
+}
+
+.category-label {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Bottom navigation styles */
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 48px;
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-active {
+  color: #60a5fa;
+}
+
+.nav-inactive {
+  color: #9ca3af;
+}
